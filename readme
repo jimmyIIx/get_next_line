@@ -1,0 +1,13 @@
+# GET_NEXT_LINE
+
+Fonction C qui lit et retourne une ligne à la fois depuis un descripteur de fichier. Gère plusieurs descripteurs de fichiers et diverses tailles de buffers.
+
+## Fonctionnalités principales
+- Lecture progressive des fichiers ligne par ligne
+- Gestion d'un buffer interne pour optimiser les performances
+- Support de plusieurs descripteurs de fichiers simultanément
+- Retour d'une ligne complète (terminée par \n ou EOF)
+- Gestion des cas limites (EOF, fichier vide, lignes longues)
+
+## Utilisation
+Chaque appel retourne la ligne suivante du descripteur de fichier, jusqu'à EOF où elle retourne NULL.
